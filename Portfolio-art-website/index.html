@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McGurston.art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/asnaa.jpg" alt="mcgurston.logo" width="40"/>
+            <h1>McGurston.art</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#portfoliio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+     <section id="home" class="home">
+        <div class="welcome-box">
+            <h2>Hi, <span id="username"></span>Welcome to</h2>
+            <h1>MCGURSTON.ART</h1>
+        </div>
+     </section>
+
+     <!--Profile section-->
+     <section id="profile" class="section">
+        <h2>About Me</h2>
+        <p>Hi, it's me, Asnaa! Cewek gabut yang punya segudang hobby. Drawing is one of it. Aku suka gambar udah dari kecil, but don't get it wrong, ibuku nggak mengandungku sepaket sama bakat apapun. I earned it myself. Yes, sejak pandemi, kita jadi punya waktu banyak buat belajar hal baru. dan ditahun 2020 lalu, aku mulai mengasah bakat gambarku.</p><br>
+        <p>What I'm going to say is...<br>Kita punya banyak potensi sebagai manusia, and you can be anything you wanted.</p><br>
+        <p>Kalau kalian berminat untuk membeli produk dariku, kalian bisa isi langsung formulir dibawah. Thank you!</p>
+     </section>
+
+     <!--Portfolio Section-->
+     <section id="portfolio" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvSfXZRBwzDDltmpWuayBbXFxrOPiugyXZw&s" alt="art 1"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSReuIpTh9IxJP1sdc0jmfOawduf3HhUMK6_UkPaxhxfsiCIK-kHjgtorvdptMRssjepXc&usqp=CAU" alt="art 2"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tanZ7mkyYl-l2BvQ-QFv2UhtUgbM3C1hDg&s" alt="art 3"/>
+            <img src="img/asnaa.jpg" alt="art 4" width="250"/>
+        </div>
+     </section>
+
+     <!--Pricing Section-->
+     <section id="pricing" class="section">
+        <h2>Price List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Ukuran (cm)</th>
+                    <th>Hitam Putih</th>
+                    <th>Warna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                 <td>10x15</td>
+                 <td>50.000</td>
+                 <td>100.000</td>
+                </tr>
+                <tr>
+                    <td>21x30</td>
+                    <td>100.000</td>
+                    <td>150.000</td>
+                </tr>
+                <tr>
+                    <td>30x40</td>
+                    <td>150.000</td>
+                    <td>200.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="note">
+            <li>Harga dihitung persatu wajah</li>
+            <li>Tambah 1 wajah = Tambah 50%</li>
+            <li>Kompleksitas mempengaruhi harga</li>
+            <li>Belum termasuk bingkai dan biaya ongkir</li>
+            <li>Gambar bisa dikirim lewat email asnaamcgurston@gmail.com</li>
+        </ul>
+     </section>
+
+     <!--Order Section-->
+     <section id="order" class="section">
+        <h2>Order now!</h2>
+        <form id="orderForm">
+            <label>Nama </label>
+            <input type="text" id="name" placeholder="Nama" required/><br>
+            <label>Tanggal Pesan </label>
+            <input type="date" id="date" placeholder="Tanggal Pesan" required/><br>
+            <label>Email </label>
+            <input type="email" placeholder="Email" required/>
+            <select id="size" required>
+                <option value=" ">Pilih Ukuran</option>
+                <option value="10x15">10x15</option>
+                <option value="21x30">21x30</option>
+                <option value="30x40">30x40</option>
+            </select>
+            <div class="radio-group">
+                <label><input type="radio" name="Color" value="bnw" required/>Hitam-Putih</label>
+                <label><input type="radio" name="color" value="color" required/>Warna</label>
+            </div>
+            <textarea id="note" placeholder="Catatan Tambahan"></textarea><br>
+            <button type="submit">Buat Pesanan</button>
+        </form>
+        <p id="confirmation"></p>
+     </section>
+
+     <!--Footer-->
+     <footer>
+        <p>&copy; 2025 McGurston.art. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/mcgurston.art/">Instagram</a>
+            <a href="https://www.tiktok.com/@asnaa.m.art">TikTok</a>
+            <a href="https://www.facebook.com/Asnaa12/">Facebook</a>
+        </div>
+     </footer>
+</body>
+</html>
